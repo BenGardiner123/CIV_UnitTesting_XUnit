@@ -52,9 +52,9 @@ namespace Tests
         } 
 
         [Theory]
-        [InlineData()]
-        [InlineData()]
-        [InlineData()]
+        [InlineData(5, 1, 1, 1)]
+        [InlineData(41, 1, 2, 3)]
+        [InlineData(128, 1, 3, 4)]
         public void FibonacciRec(int expected, int num1, int num2, int numFibs)
         {
             var CLib = new RecursiveCalc();
